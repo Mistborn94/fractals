@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.Kotlin2JsCompile
+
 plugins {
     kotlin("js") version "1.3.50"
 }
@@ -16,4 +18,10 @@ dependencies {
 kotlin.target.browser {
 }
 
+
+tasks {
+    named<Kotlin2JsCompile>("compileKotlinJs") {
+        // Access kotlinOptions in here
+    }
+}
 
