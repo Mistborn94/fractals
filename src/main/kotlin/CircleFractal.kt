@@ -18,5 +18,4 @@ class CircleFractal(private val startRadius: Double,
             draw(x, y - r, r / 2, consumer)
         }
     }
-
 }

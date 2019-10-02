@@ -16,13 +16,6 @@ private fun getRenderingContext(elementId: String): CanvasProperties {
     return CanvasProperties(context, canvasElement.width, canvasElement.height)
 }
 
-private fun CanvasRenderingContext2D.drawCircle(x: Double, y: Double, r: Double) {
-    beginPath()
-    arc(x, y, r, 0.0, 360.0)
-    closePath()
-    stroke()
-}
-
 fun circleFractal(canvasProperties: CanvasProperties) {
     val (canvasContext, width, height) = canvasProperties
 
